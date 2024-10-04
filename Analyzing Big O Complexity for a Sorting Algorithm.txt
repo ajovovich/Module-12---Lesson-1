@@ -1,0 +1,37 @@
+                                                    Task 1: Identifying Key Operations
+
+Key Operations:
+
+1. -Outer Loop- Iterates `n` times.
+2. -Inner Loop- Iterates `n-i-1` times for each `i`.
+3. -Comparison- `arr[j] > arr[j+1]`.
+4. -Swap Operation- `arr[j], arr[j+1] = arr[j+1], arr[j]`.
+
+The primary operations affecting performance are the comparisons and potential swaps within the inner loop.
+
+---
+
+                                                    Task 2: Calculating Big O Complexity
+
+Big O Analysis:
+
+- The algorithm is a variation of the bubble.
+- The worst-case scenario occurs when the array is in descending order, requiring maximum swaps.
+- The algorithm's performance degrades quadratically with increasing input size.
+
+---
+
+                                                    Task 3: Efficiency Analysis
+
+Potential Improvements:
+
+1. Optimized Bubble Sort:
+   - Introduce a flag to detect if the array is already sorted, potentially reducing unnecessary passes.
+
+2. Alternative Algorithms:
+   - Merge Sort: Offers O(n log n) complexity, making it more efficient for larger datasets.
+   - Quick Sort: Also O(n log n) on average, with efficient in-place sorting.
+   - Heap Sort: Provides O(n log n) complexity, suitable for all input sizes.
+
+Recommendation:
+For better performance, especially when it comes to using larger arrays, consider using a more efficient algorithm like merge sort or quick sort. These algorithms handle larger datasets more effectively, with significantly reduced time complexity.
